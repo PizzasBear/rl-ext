@@ -1,0 +1,18 @@
+[package]
+name = "rlext"
+version = "0.1.0"
+authors = ["max <gmx.sht@gmail.com>"]
+edition = "2021"
+
+[lib]
+name = "rlext"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.16", features = ["extension-module"] }
+ndarray = { version = "0.15", features = ["rayon"] }
+numpy = "0.16"
+num = "0.4"
+rayon = "1.5"
+ordered-float = "3.0"
+rand = { version = "0.8", features = ["small_rng"] }
